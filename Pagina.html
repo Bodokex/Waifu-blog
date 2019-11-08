@@ -9,9 +9,9 @@
     <title>Proyecto</title>
 </head>
 <style>
-*{
+/* *{
     outline: 1px solid red;
-}
+} */
 body
 {
     margin: 0px;
@@ -142,16 +142,17 @@ body
     cursor: pointer;
     transition: 450ms all;
     transform-origin: center left;
+    position: relative;
 }
 .carousel__item:hover ~ .carousel__item
 {
     transform: translate3d(100px, 0, 0);
 }
-.carousel__container:hover ~ .carousel__item
+.carousel__container:hover  .carousel__item
 {
     opacity: 0.3;
 }
-.carousel__container:hover ~ .carousel__item:hover
+.carousel__container:hover  .carousel__item:hover
 {
     transform: scale(1.5);
     opacity: 1;
@@ -181,7 +182,7 @@ body
           <div class="carousel__item">
             </div>
       </div>
-
+    
     
     </section>
     <section class="main">
